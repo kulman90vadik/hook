@@ -1,0 +1,30 @@
+.home-nav {
+    padding: 12px 0;
+    background-color: $green;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    &__link {
+        font-weight: 700;
+        color: $fa;
+        font-size: 14px;
+        outline: transparent;
+        transition: color 0.3s ease-in;
+        &:hover {
+            color: $global;
+        }
+        &:focus {
+            color: #ccc;
+        }
+        &:active {
+            color: #616161;
+        }
+    }
+}

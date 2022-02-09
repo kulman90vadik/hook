@@ -1,8 +1,32 @@
-// @font-face {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-display: swap;
-//     src:    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-//             url('../fonts/Montserrat-Bold.woff') format('woff');
-// }
+@font-face {
+    font-family: 'Bw Modelica';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:    url('../fonts/BwModelicaCyrillicDEMO-Regular.woff2') format('woff2'),
+            url('../fonts/BwModelicaCyrillicDEMO-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bw Modelica';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:    url('../fonts/BwModelicaCyrillicDEMO-Medium.woff2') format('woff2'),
+            url('../fonts/BwModelicaCyrillicDEMO-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bw Modelica';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:    url('../fonts/BwModelicaCyrillicDEMO-Bold.woff2') format('woff2'),
+            url('../fonts/BwModelicaCyrillicDEMO-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bw Modelica';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src:    url('../fonts/BwModelicaCyrillicDEMO-ExtraBold.woff2') format('woff2'),
+            url('../fonts/BwModelicaCyrillicDEMO-ExtraBold.woff') format('woff');
+}

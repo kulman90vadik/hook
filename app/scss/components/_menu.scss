@@ -1,0 +1,48 @@
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+    &__link {
+        outline: transparent;
+        display: block;
+        font-size: 11px;
+        transition: color 0.3s ease;
+        position: relative;
+        padding-bottom: 2px;
+        &::after,
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: $global;
+            transition: width 0.3s ease-in;
+        }
+        &::after {
+            right: 50%;
+        }
+        &::before {
+            left: 50%;
+        }
+        &:hover {
+            color: $green;
+            &::after,
+            &::before {
+                width: 50%;
+            }
+        }
+        &:focus {
+            color: #ccc;
+        }
+        &:active {
+            color: #616161;
+        }
+    }
+}

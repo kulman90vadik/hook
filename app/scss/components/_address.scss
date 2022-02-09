@@ -1,0 +1,56 @@
+.address {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        position: relative;
+        padding-left: 45px;
+        width: 100%;
+        font-size: 13px;
+        &:not(:last-child) {
+            margin-right: 100px;
+        }
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            width: 30px;
+            height: 30px;
+            @include bg;
+        }
+        &--map {
+            max-width: 255px;
+            &::after {
+                background-image: url(../images/map.png);
+            }
+        }
+        &--clock {
+            max-width: 150px;
+            &::after {
+                width: 35px;
+                background-image: url(../images/clock.png);
+            }
+        }
+        &--phone {
+            max-width: 165px;
+            &::after {
+                background-image: url(../images/phone.png);
+            }
+        }
+    }
+    &__phone {
+        display: block;
+        outline: transparent;
+        transition: color 0.3s ease;
+        &:hover {
+            color: $green;
+        }
+        &:focus {
+            color: #ccc;
+        }
+        &:active {
+            color: #616161;
+        }
+    }
+}

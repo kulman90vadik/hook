@@ -1,0 +1,66 @@
+.header {
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 14px;
+    }
+    &__feedback {
+        cursor: pointer;
+        padding: 5px 15px;
+        margin-right: 21px;
+        margin-left: auto;
+        color: $green;
+        font-size: 11px;
+        font-weight: 700;
+        border: 1px solid rgba($green, 0.7);
+        outline: transparent;
+        transition: color 0.3s ease-in, border-color 0.3s ease-in;
+        border-radius: 30px;
+        background-color: transparent;
+        &:hover {
+            color: $global;
+            border-color: $global;
+        }
+        &:focus {
+            color: #ccc;
+            border-color: #ccc;
+        }
+        &:active {
+            color: #616161;
+            border-color:#616161;
+        }
+    }
+    &__login {
+        display: block;
+        width: 27px;
+        height: 23px;
+        @include bg;
+        background-image: url(../images/login.png);
+        outline: transparent;
+        transition: opacity 0.3s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+.logo {
+    outline: transparent;
+    display: flex;
+    width: 90px;
+    height: 70px;
+    &__images {
+        width: 100%;
+        object-fit: cover;
+    }
+}

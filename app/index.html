@@ -4,24 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canada</title>
-    <!-- <link rel="shortcut icon" href="images/logo-title.png" type="image/png"> -->
+    <title>Сижу Вяжу</title>
+    <link rel="shortcut icon" href="images/logo-title.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.ss"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body id="body">
     <header class="header">
-    <div class="container container--fluid">
-        gg
+    <div class="container">
+        <div class="header__top">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">О компании</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Оплата</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Возврат</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Мероприятия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__feedback" type="button">Перезвоните мне</button>
+            <a class="header__login" href="#" aria-label="Переход на страницу регистрации"></a>
+        </div>
+        <div class="header__center">
+            <a class="logo" href="#">
+                <img class="logo__images" src="images/logo.png" alt="Логотип">
+            </a>
+            <address class="address">
+                <ul class="address__list">
+                    <li class="address__item address__item--map">
+                        м. Кропоткинская Соймоновский проезд, д.7 с.1
+                    </li>
+                    <li class="address__item address__item--clock">
+                        Пн - Пт 11 - 20
+                        Сб - Вск 11 - 18
+                    </li>
+                    <li class="address__item address__item--phone">
+                        <a class="address__phone" href="tel:+78000000000">+7 800 000 00 00</a>
+                        <a class="address__phone" href="tel:+78000000000">+7 800 000 00 00</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </div>
+    <div class="home-nav">
+        <div class="container">
+            <ul class="home-nav__list">
+                <li class="home-nav__item">
+                    <a class="home-nav__link" href="#">Пряжа</a>
+                </li>
+                <li class="home-nav__item">
+                    <a class="home-nav__link" href="#">Спицы</a>
+                </li>
+                <li class="home-nav__item">
+                    <a class="home-nav__link" href="#">Крючки</a>
+                </li>
+                <li class="home-nav__item">
+                    <a class="home-nav__link" href="#">Аксессуары</a>
+                </li>
+                <li class="home-nav__item">
+                    <a class="home-nav__link" href="#">Подарочные сертификаты</a>
+                </li>
+                <li class="home-nav__item">
+                    <a class="home-nav__link" href="#">МК и описания</a>
+                </li>
+                <li class="home-nav__item">
+                    <a class="home-nav__link" href="#">Модели</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="search">
+        <div class="container">
+            <form class="search__form" action="#">
+                <button class="search__btn" type="submit">
+                    <svg class="search__icon" aria-label="поиск">
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </button>
+                <label for="search" class="visually-hidden">Текстовое поля для поиска по странице</label>
+                <input class="search__input" id="search" type="search" placeholder="Поиск" name="Поиск">
+            </form>
+        </div>
     </div>
 </header>
     <main class="main">
-
+        <section class="home">
+    <div class="container">
+        <div class="home__swiper">
+            <ul class="home__wrapper">
+                <li class="home__slide" style="background-image: url(images/home-swiper.jpg);"></li>
+                <li class="home__slide" style="background-image: url(images/home-swiper.jpg);"></li>
+                <li class="home__slide" style="background-image: url(images/home-swiper.jpg);"></li>
+                <li class="home__slide" style="background-image: url(images/home-swiper.jpg);"></li>
+                <li class="home__slide" style="background-image: url(images/home-swiper.jpg);"></li>
+            </ul>
+            <div class="home__pagination"></div>
+            <div class="home__arrows">
+                <button class="home__arrow home__arrow--prev" type="button">
+                    <svg class="home__icon" aria-label="prev">
+                        <use xlink:href="images/sprite.svg#arrow-left"></use>
+                    </svg>
+                </button>
+                <button class="home__arrow home__arrow--next" type="button">
+                    <svg class="home__icon" aria-label="prev">
+                        <use xlink:href="images/sprite.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="about">
+    <div class="container">
+        <ul class="about-list">
+            <li class="about-list__item about-list__item--">
+                Только натуральный состав
+            </li>
+            <li class="about-list__item about-list__item--">
+                Актуальное наличие на сайте
+            </li>
+            <li class="about-list__item about-list__item--">
+                Быстрая отправка
+            </li>
+            <li class="about-list__item about-list__item--">
+                Удобное расположение
+            </li>
+            <li class="about-list__item about-list__item--">
+                Помощь в подборе товаров
+            </li>
+        </ul>
+    </div>
+</section>
     </main>    
     <footer class="footer">
     <div class="container">
       
     </div>
 </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>
